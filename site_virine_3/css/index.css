@@ -1,0 +1,167 @@
+/* inpostation font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --primary : #0162be;
+}
+body{
+    background: var(--primary);
+    position: relative;
+}
+
+
+/* header */
+.head{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+
+#logo{
+    width: 70px;
+}
+
+.head nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px;
+    list-style: none;
+
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: 600;
+    font-size: 25px;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+/* contant */
+
+
+.hero{
+   width: 100%;
+   height: auto;
+   display: flex;
+align-items: center;
+justify-content: space-around;
+margin: 0 auto;
+}
+
+.content{
+    
+    padding: 30px 5% ;
+    width: 50%;
+
+}
+
+.content h1{
+    width: 100%;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 3px;
+}
+.content p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    text-transform: 600;
+    color: var(--primary);
+    padding: 10px 20px;
+    background: white;
+    border-radius:  20px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px gray;
+
+}
+
+.btn:hover{
+    background: var(--primary);
+    color: white;
+    
+}
+
+/* content-img */
+
+
+.content-img> img{
+    height: 400px;
+    position: relative;
+    
+
+}
+
+/* social media */
+
+
+
+ .content-img ul{
+list-style: none;
+position: absolute;
+top: 45%;
+right: 5%;
+
+}
+
+.content-img ul i{
+    padding: 10px 0;
+    color: white;
+}
+
+
+/* three-media */
+.color-pep{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+.color-pep > img{
+        
+    width: 100px;
+    height: 100px;
+}
+
+/* media-qury */
+
+@media (max-width:600px){
+    .head nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 5px 20px;
+        list-style: none;
+    
+        
+    }
+
+    .hero{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+     margin: 0 auto;
+     }
+}

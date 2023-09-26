@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.wapper{
+    display: grid;
+    gap: 10px 0 ;
+}
+/* header */
+.head{
+    padding: 10px;
+    background: black url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+}
+.head>*{
+    margin: 10px;
+}
+.head h1{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.head> p{
+    color: white;
+    font-size: 20px;
+
+}
+.btn{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding:  10px 20px;
+    display: block;
+    background: black;
+}
+
+/* main-section */
+
+.main-sec{
+    display: grid;
+    text-align: center;
+    gap:  0 20px;
+    grid-template-areas: 
+    "main main main main"
+    "par par par1 par1";
+    background-color: #e3e3e3;
+  color: #333;
+
+}
+#main{
+    grid-area: main;
+    font-size: 40px;
+}
+#par1{
+    grid-area: par;
+}
+#par2{
+    grid-area: par1;
+}
+#par1,#par2{
+    padding: 10px 30px;
+    font-size: 30px;
+}
+
+
+/* card-1 */
+
+
+.card-1> img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat( auto-fit ,minmax(200px,1fr));
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.card-1{
+    padding: 10px 20px;
+    background: #eee;
+    width: fit-content;
+    box-shadow: 0px 5px 10px #eeee;
+
+}

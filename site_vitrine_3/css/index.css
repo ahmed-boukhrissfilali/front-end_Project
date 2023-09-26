@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eaeaeaea;
+    min-width: 100vh;
+}
+
+
+.head {
+    position: fixed;
+    top: 10px;
+    left:0;
+    width: 100%;
+    padding: 30px 50px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: rgb(104,104,104,0.3);
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+}
+.logo span{
+    color: #1743e3;
+    font-size: 50px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+
+}
+nav>ul >li {
+    margin: 0 10px;
+
+}
+
+nav >ul  >li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+nav >ul  >li a:hover ,#home{
+    color: #1743e3;
+}
+
+/* social media icon  */
+
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    list-style: none;
+    
+}
+.social-media li {
+    width: 40px;
+    height: 40px;
+    border: 3px solid transparent;
+    transform: rotate(45deg);
+
+}
+.social-media li a{
+    padding: 10px;
+    font-size: 24px;
+    transition: 0.5s;
+    color: white;
+}
+.social-media li a i {
+    transform: rotate(-45deg);
+
+
+    
+}
+.social-media li a:hover{
+    border: 2px solid #bababa;
+
+
+}
+
+/* content */
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    width: 100%;
+    height: 100vh;
+    padding: 50px 8% 0;
+}
+
+.home-cont{
+    max-width: 650px;
+}
+
+.home-cont h1{
+    font-size: 50px;
+    line-height: 1.2;
+
+}
+
+.home-cont h3{
+    font-size: 40px;
+    color: #1743e3;
+}
+.home-cont p{
+    font-size: 20px;
+    margin: 15px 0 30px;
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    background: #1743e3;
+    box-shadow: 0 0 10px rgb(0,0, 0,0.2);
+    color: white;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 2px solid #1743e3;
+
+}
+.btn:hover{
+    background: transparent;
+    color: #1743e3;
+
+
+}
+
+
+/* side-img */
+.home-img{
+    position: relative;
+    width:450px;
+    height: 450px;
+    transform: rotate(45deg);
+    box-shadow: -15px 15px 15px rgb(0, 0, 0 , 0.2);
+}
+
+.home-img .rh{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 25px solid #1743e3;
+}
+
+.home-img .rh img{
+    position: absolute;
+    top: 110px;
+    left: -150px;
+    width: 550px;
+    transform: rotate(-45deg);
+  
+}
+
+.rh2{
+    position: absolute;
+    width: 750px;
+    top:-25%;
+    right: -25%;
+    height: 750px;
+    background-color: #1743e3;
+    transform: rotate(45deg);
+    z-index: -1;
+    overflow-y: hidden;
+}
